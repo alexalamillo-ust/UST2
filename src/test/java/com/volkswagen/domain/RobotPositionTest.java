@@ -24,19 +24,19 @@ public class RobotPositionTest {
     }
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         robotPosition = createDefault();
     }
 
     @Test
-    void creates_a_robot_position() {
+    public void creates_a_robot_position() {
         assertThat(robotPosition.y()).isEqualTo(DEFAULT_ROBOT_POSITION_Y);
         assertThat(robotPosition.x()).isEqualTo(DEFAULT_ROBOT_POSITION_X);
         assertThat(robotPosition.orientation()).isEqualTo(DEFAULT_ROBOT_POSITION_ORIENTATION);
     }
 
     @Test
-    void creates_a_robot_position_with_invalid_raw_value() {
+    public void creates_a_robot_position_with_invalid_raw_value() {
         IllegalArgumentException illegalArgumentException = assertThrows(
             IllegalArgumentException.class,
             () -> RobotPosition.from("N2N"));
