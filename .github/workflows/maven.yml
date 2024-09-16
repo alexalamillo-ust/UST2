@@ -37,6 +37,15 @@ jobs:
       uses: SonarSource/sonarcloud-github-action@v3.0.0
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
+    - name: Sonarcloud Project Configuration Action
+        # You may pin to the exact commit or the version.
+  # uses: xmidt-org/sonarcloud-project-config@fc859091300dfb7b24244046fa82a53e7d05eaa0
+      uses: xmidt-org/sonarcloud-project-config@v1
+      with:
+          # The Sonarcloud token used for auth.
+          sonar-token: ${{ secrets.SONAR_TOKEN }}
+          
           
 
 
