@@ -43,7 +43,7 @@ public class JdbcRobotsResultAdapter implements RobotsResultPort {
   private void initConnection() throws SQLException {
     String url = "jdbc:mysql://localhost:3306/robots?serverTimezone=UTC";
     String username = "root";
-    String password = "Dddedo";
+    String password = "gpelwjxovbufnsn2455_){mnnio<nb";
     connection = DriverManager.getConnection(url, username, password);
   }
 }
