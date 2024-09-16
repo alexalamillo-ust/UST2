@@ -15,6 +15,7 @@ public class JdbcRobotsResultAdapter implements RobotsResultPort {
 
   private Connection connection;
 
+  
   @Override
   public void processRobotsResult(List<Robot> robots) {
     try {
