@@ -24,7 +24,6 @@ public class Main {
         CleaningRobotService cleaningRobotService = new CleaningRobotServiceImpl(robotsResultPort);
 
         ReadRobotsDataAdapter readRobotsDataAdapter = new ReadRobotsDataAdapter();
-
         readRobotsDataAdapter.readDataFrom(FILE_PATH).ifPresent(
                 robotsDataCommand -> cleaningRobotService.controlRobots(robotsDataCommand));
 
